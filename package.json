@@ -9,15 +9,18 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "modern-normalize": "^1.1.0",
-    "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-redux": "^7.2.5",
+    "react-redux": "^7.2.6",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "react-toastify": "^8.0.3",
     "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
+    "shortid": "^2.2.16",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -26,8 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "server": "json-server --delay 500 --port 5050 --watch db.json"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
