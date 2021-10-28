@@ -12,6 +12,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     marginBottom: 15,
+    color: 'goldenrod',
   },
 };
 
@@ -50,12 +51,19 @@ export default function RegisterView() {
       <form onSubmit={handleSubmit} className={s.form} autoComplete="off">
         <label style={styles.label}>
           Name
-          <input type="text" name="name" value={name} onChange={handleChange} />
+          <input
+            className={s.input}
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleChange}
+          />
         </label>
 
         <label style={styles.label}>
           Email
           <input
+            className={s.input}
             type="email"
             name="email"
             value={email}
@@ -66,6 +74,7 @@ export default function RegisterView() {
         <label style={styles.label}>
           Password
           <input
+            className={s.input}
             type="password"
             name="password"
             value={password}

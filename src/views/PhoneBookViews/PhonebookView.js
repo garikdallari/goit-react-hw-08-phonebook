@@ -16,7 +16,7 @@ export default function PhonebookView() {
   }, [dispatch]);
   return (
     <div className={s.container}>
-      <Section title="Phonebook">
+      <Section>
         <Form />
       </Section>
       {contacts.length > 0 && (

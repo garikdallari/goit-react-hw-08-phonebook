@@ -12,7 +12,7 @@ export async function addContact(contact) {
   return data;
 }
 
-export async function dltContact(id) {
+export async function deleteContact(id) {
   const { data } = await axios.delete(`/contacts/${id}`);
   return data;
 }

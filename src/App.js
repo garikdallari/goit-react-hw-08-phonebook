@@ -1,14 +1,13 @@
-import { lazy, Suspense } from 'react';
-import Container from './components/Container/Container';
-import AppBar from './components/AppBar';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useDispatch /*useSelector*/ } from 'react-redux';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Switch } from 'react-router-dom';
 import { authOperations } from './redux/auth';
 import PrivateRoute from './components/PrivateRoute';
 import PublicRoute from './components/PublicRoute';
+import Container from './components/Container/Container';
+import AppBar from './components/AppBar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const HomeView = lazy(() => import('./views/HomeViews/HomeViews'));
 const RegisterView = lazy(() => import('./views/RegisterViews/RegisterViews'));

@@ -56,10 +56,10 @@ const FormHooks = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor={nameInputId}>
+      <form className={s.form} onSubmit={handleSubmit}>
+        <label className={s.label} htmlFor={nameInputId}>
           <input
-            className={s.formInput}
+            className={s.input}
             placeholder="Name"
             id={nameInputId}
             type="text"
@@ -72,10 +72,10 @@ const FormHooks = () => {
           />
         </label>
 
-        <label htmlFor={numInputId}>
+        <label className={s.label} htmlFor={numInputId}>
           <input
-            className={s.formInput}
-            placeholder="Tel"
+            className={s.input}
+            placeholder="Number"
             id={numInputId}
             type="tel"
             name="number"
@@ -86,7 +86,7 @@ const FormHooks = () => {
             onChange={handleChange}
           />
         </label>
-        <button className={s.formBtn} type="submit">
+        <button className={s.button} type="submit">
           Add contact
         </button>
       </form>
