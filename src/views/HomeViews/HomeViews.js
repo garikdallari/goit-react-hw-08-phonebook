@@ -7,7 +7,7 @@ const HomeView = () => (
     <h1 className={s.title}>
       phoneb<span className={s.span}>O_o</span>k
     </h1>
-    <HoleImage className={s.hole} />
+    <HoleImage className={s.image} />
   </div>
 );
 

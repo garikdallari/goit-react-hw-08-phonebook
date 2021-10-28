@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import shortid from 'shortid';
 import { useDispatch, useSelector } from 'react-redux';
 import { contactsSelectors, contactsOperations } from '../../redux/contacts';
+import shortid from 'shortid';
 import { toast } from 'react-toastify';
 import s from './Form.module.css';
 
@@ -59,6 +59,7 @@ const FormHooks = () => {
       <form className={s.form} onSubmit={handleSubmit}>
         <label className={s.label} htmlFor={nameInputId}>
           <input
+            autoComplete="off"
             className={s.input}
             placeholder="Name"
             id={nameInputId}
@@ -74,6 +75,7 @@ const FormHooks = () => {
 
         <label className={s.label} htmlFor={numInputId}>
           <input
+            autoComplete="off"
             className={s.input}
             placeholder="Number"
             id={numInputId}

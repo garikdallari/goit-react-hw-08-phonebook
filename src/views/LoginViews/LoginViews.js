@@ -47,6 +47,7 @@ export default function LoginView() {
         <label style={styles.label}>
           Email
           <input
+            autoComplete="off"
             className={s.input}
             type="email"
             name="email"
@@ -58,6 +59,7 @@ export default function LoginView() {
         <label style={styles.label}>
           Password
           <input
+            autoComplete="off"
             className={s.input}
             type="password"
             name="password"

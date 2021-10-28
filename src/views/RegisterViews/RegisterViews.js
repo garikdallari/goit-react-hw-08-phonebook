@@ -52,6 +52,7 @@ export default function RegisterView() {
         <label style={styles.label}>
           Name
           <input
+            autoComplete="off"
             className={s.input}
             type="text"
             name="name"
@@ -63,6 +64,7 @@ export default function RegisterView() {
         <label style={styles.label}>
           Email
           <input
+            autoComplete="off"
             className={s.input}
             type="email"
             name="email"
@@ -74,6 +76,7 @@ export default function RegisterView() {
         <label style={styles.label}>
           Password
           <input
+            autoComplete="off"
             className={s.input}
             type="password"
             name="password"

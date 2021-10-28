@@ -11,7 +11,7 @@
   font-size: 48px;
   color: goldenrod;
 }
-.hole {
+.image {
   width: 400px;
   fill: goldenrod;
   animation: rotation 20s infinite linear;
