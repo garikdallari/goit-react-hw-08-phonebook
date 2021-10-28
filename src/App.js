@@ -31,7 +31,9 @@ export default function App() {
         <Container>
           <AppBar />
           <Switch>
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense
+              fallback={<h2 style={{ color: 'crimson' }}>Loading...</h2>}
+            >
               <PublicRoute exact path="/">
                 <HomeView />
               </PublicRoute>
